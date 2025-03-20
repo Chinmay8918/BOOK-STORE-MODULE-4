@@ -1,0 +1,215 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+	background-color: #f4f4f4;
+	color: #333;
+  }
+  
+  /* Main Container */
+  .main_container {
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px;
+  }
+  
+  /* Navbar */
+  .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #054d40;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 8px;
+  }
+  
+  .navbar h1 {
+	font-size: 1.8rem;
+  }
+  
+  .white_btn {
+	background: white;
+	color: #222;
+	border: none;
+	padding: 8px 15px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  .white_btn:hover {
+	background: #ddd;
+  }
+  
+  /* Create Book Section */
+  .create_book {
+	background: white;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .create_book h2 {
+	margin-bottom: 15px;
+	font-size: 1.5rem;
+  }
+  
+  .create_book input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+  }
+  
+  .add_btn, .update_btn {
+	background: #28a745;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: 0.3s;
+  }
+  
+  .add_btn:hover, .update_btn:hover {
+	background: #218838;
+  }
+  
+  /* Book List */
+  .book_list {
+	margin-top: 30px;
+  }
+  
+  .book_list h2 {
+	font-size: 1.6rem;
+	margin-bottom: 15px;
+  }
+  
+  /* Book Card */
+  .book_card {
+	background: white;
+	padding: 15px;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+	position: relative;
+	transition: 0.3s;
+  }
+  
+  .book_card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .book_card h3 {
+	font-size: 1.4rem;
+	margin-bottom: 5px;
+  }
+  
+  .book_card p {
+	font-size: 1rem;
+	color: #555;
+	margin-bottom: 8px;
+  }
+  
+  /* Buttons */
+  .edit_btn {
+	background: #007bff;
+	color: white;
+	padding: 8px 12px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	margin-right: 8px;
+	transition: 0.3s;
+  }
+  
+  .edit_btn:hover {
+	background: #0056b3;
+  }
+  
+  .delete_btn {
+	background: #dc3545;
+	color: white;
+	padding: 8px 12px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: 0.3s;
+  }
+  
+  .delete_btn:hover {
+	background: #c82333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+	.navbar {
+	  flex-direction: column;
+	  text-align: center;
+	}
+  
+	.create_book {
+	  padding: 15px;
+	}
+  
+	.book_card {
+	  padding: 12px;
+	}
+  
+	.book_card h3 {
+	  font-size: 1.2rem;
+	}
+  
+	.book_card p {
+	  font-size: 0.9rem;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.navbar h1 {
+	  font-size: 1.5rem;
+	}
+  
+	.white_btn {
+	  padding: 6px 12px;
+	  font-size: 14px;
+	}
+  
+	.create_book h2 {
+	  font-size: 1.4rem;
+	}
+  
+	.create_book input {
+	  font-size: 14px;
+	  padding: 8px;
+	}
+  
+	.add_btn, .update_btn {
+	  font-size: 14px;
+	  padding: 8px 12px;
+	}
+  
+	.book_card {
+	  padding: 10px;
+	}
+  
+	.edit_btn, .delete_btn {
+	  font-size: 12px;
+	  padding: 6px 10px;
+	}
+  }
+   
