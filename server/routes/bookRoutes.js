@@ -11,6 +11,7 @@ router.post('/', async (req, res) => {
         await newBook.save();
         res.status(201).json(newBook);
     } catch (error) {
+        console.log("Error in adding the books",error);
         res.status(500).json({ error: 'Error adding book' });
     }
 });
@@ -20,7 +21,8 @@ router.get('/', async (req, res) => {
     try {
         const books = await Book.find();
         res.json(books);
-    } catch (error) {
+    } catch (error) {        console.log("Error in getting the books",error);
+
         res.status(500).json({ error: 'Error fetching books' });
     }
 });
@@ -32,6 +34,8 @@ router.get('/:id', async (req, res) => {
         if (!book) return res.status(404).json({ error: 'Book not found' });
         res.json(book);
     } catch (error) {
+        console.log("Error in getting the books",error);
+
         res.status(500).json({ error: 'Error fetching book' });
     }
 });
