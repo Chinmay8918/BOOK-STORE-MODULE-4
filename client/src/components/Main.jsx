@@ -64,7 +64,7 @@ const Main = () => {
       if (!editingBook) return;
 
       await axios.put(
-        `http://localhost:8080/api/books/${editingBook._id}`,
+        `https://book-store-module-4-backend.onrender.com/api/books/${editingBook._id}`,
         newBook
       );
       fetchBooks();
